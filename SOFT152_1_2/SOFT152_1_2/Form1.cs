@@ -28,8 +28,9 @@ namespace SOFT152_1_2
 
 
 
-        Neighbourhood[] allNeighbourhoods;
+       
         District[] allDistricts;
+        Neighbourhood[] allNeighbourhoods;
         Property[] allProperties;
 
         public Form1()
@@ -157,6 +158,22 @@ namespace SOFT152_1_2
 
             }
             inData.Close();
+
+
+            //fills in the district table
+            string[] tempDistNames = new string[allDistricts.Length];
+
+            //Makes an array string with the district names
+            for (int i = 0; i < tempDistNames.Length; i++)
+            {
+                tempDistNames[i] = allDistricts[i].GETdistrictName();
+
+            }
+
+            for (int i = 0; i < tempDistNames.Length; i++)
+            {
+                dgDist.Rows.Add(tempDistNames[i]);
+            }
         }
 
 
@@ -166,27 +183,10 @@ namespace SOFT152_1_2
             dgNeig.Rows.Clear();
             dgProp.Rows.Clear();
 
-            string[] tempDistNames = new string[allDistricts.Length]; 
-
-
-          
-
-            //Makes an array string with the district names
-            for (int i = 0; i < tempDistNames.Length; i++)
-            {
-                tempDistNames[i] = allDistricts[i].GETdistrictName();
-               
-            }
-
-
-            dgDist.Rows.Clear(); 
-
-            for (int i = 0; i < tempDistNames.Length; i++)
-            {
-                dgDist.Rows.Add(tempDistNames[i]);
-            }
+            setup();
 
            
+
    
         }
 
@@ -303,14 +303,46 @@ namespace SOFT152_1_2
         /// </summary>
         public void read()
         {
-            string[] districtString = new string[0]; 
-            foreach (DataGridViewRow row in dgDist.Rows)
+           // MessageBox.Show(dgDist.Rows[0]);
+
+
+            //Reading the districts values
+            try
             {
-                Array.Resize(ref districtString, districtString.Length + 1); 
-                districtString[districtString.Length - 1] = row.Cells[0].Value.ToString();
-                
-                
+                for (int i = 0; i < allDistricts.Length; i++)
+                {
+                    allDistricts[i].SETdistrictName(dgDist.Rows[i].Cells["distName"].Value.ToString());
+                }
             }
+            catch
+            {
+                MessageBox.Show("could not read data from District data grid");
+            }
+
+          
+            //Reading the neighbourhood values 
+            try
+            {
+               
+
+                District current = allDistricts[selectedDistrict]; 
+                allNeighbourhoods = current.GETneighbourhoods();
+                int counter = current.GETnumOfNeighbourhoods(); 
+
+                for (int i = 0; i < counter; i++)
+                {
+                   
+                   allNeighbourhoods[i].SETneighbourhoodName(dgNeig.Rows[i].Cells["neigName"].Value.ToString());
+                   //tempString = dgNeig.Rows[i].Cells["neigName"].Value.ToString();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("could not read data from Neighbourhood data grid");
+            }
+
+
+        
         }
 
         private void button1_Click_1(object sender, EventArgs e)

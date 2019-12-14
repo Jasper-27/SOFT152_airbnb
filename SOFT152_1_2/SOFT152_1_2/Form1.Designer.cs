@@ -32,9 +32,7 @@
             this.OFDGetData = new System.Windows.Forms.OpenFileDialog();
             this.btnOpenFile = new System.Windows.Forms.Button();
             this.dgDist = new System.Windows.Forms.DataGridView();
-            this.distName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgNeig = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgProp = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,7 +45,9 @@
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.minNight = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.daysAvailable = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.neigName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.distName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgDist)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgNeig)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgProp)).BeginInit();
@@ -93,17 +93,12 @@
             this.dgDist.TabIndex = 7;
             this.dgDist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgDist_CellContentClick);
             // 
-            // distName
-            // 
-            this.distName.HeaderText = "Name";
-            this.distName.Name = "distName";
-            // 
             // dgNeig
             // 
             this.dgNeig.AllowUserToAddRows = false;
             this.dgNeig.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgNeig.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1});
+            this.neigName});
             this.dgNeig.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgNeig.Location = new System.Drawing.Point(205, 12);
             this.dgNeig.MultiSelect = false;
@@ -111,11 +106,6 @@
             this.dgNeig.Size = new System.Drawing.Size(187, 440);
             this.dgNeig.TabIndex = 8;
             this.dgNeig.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgNeig_CellContentClick);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dgProp
             // 
@@ -195,22 +185,32 @@
             this.daysAvailable.HeaderText = "Days Available";
             this.daysAvailable.Name = "daysAvailable";
             // 
-            // button1
+            // btnSave
             // 
-            this.button1.Location = new System.Drawing.Point(284, 521);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnSave.Location = new System.Drawing.Point(284, 521);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 10;
+            this.btnSave.Text = "button1";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // neigName
+            // 
+            this.neigName.HeaderText = "Name";
+            this.neigName.Name = "neigName";
+            // 
+            // distName
+            // 
+            this.distName.HeaderText = "Name";
+            this.distName.Name = "distName";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1628, 748);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dgProp);
             this.Controls.Add(this.dgNeig);
             this.Controls.Add(this.dgDist);
@@ -231,9 +231,7 @@
         private System.Windows.Forms.OpenFileDialog OFDGetData;
         private System.Windows.Forms.Button btnOpenFile;
         private System.Windows.Forms.DataGridView dgDist;
-        private System.Windows.Forms.DataGridViewTextBoxColumn distName;
         private System.Windows.Forms.DataGridView dgNeig;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridView dgProp;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -246,7 +244,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn minNight;
         private System.Windows.Forms.DataGridViewTextBoxColumn daysAvailable;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.DataGridViewTextBoxColumn distName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn neigName;
     }
 }
 
