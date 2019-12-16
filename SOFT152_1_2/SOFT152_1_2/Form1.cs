@@ -231,7 +231,6 @@ namespace SOFT152_1_2
                     dgNeig.Rows.Add(tempNeighNames[i]);
                 }
 
-
             }
             catch
             {
@@ -283,7 +282,6 @@ namespace SOFT152_1_2
                     row[10] = tempProp.GETdaysAvailable().ToString();
                     
 
-
                     //StempNeighNames[i] = tempNeighbourhoods[i].GETneighbourhoodName();
                     dgProp.Rows.Add(row);
                 }
@@ -323,13 +321,11 @@ namespace SOFT152_1_2
             //Reading the neighbourhood values 
             try
             {
-               
+  
+                District currentDist = allDistricts[selectedDistrict];
+                allNeighbourhoods = currentDist.GETneighbourhoods();
 
-                District current = allDistricts[selectedDistrict]; 
-                allNeighbourhoods = current.GETneighbourhoods();
-                int counter = current.GETnumOfNeighbourhoods(); 
-
-                for (int i = 0; i < counter; i++)
+                for (int i = 0; i < allNeighbourhoods.Length; i++)
                 {
                    
                    allNeighbourhoods[i].SETneighbourhoodName(dgNeig.Rows[i].Cells["neigName"].Value.ToString());
@@ -342,14 +338,47 @@ namespace SOFT152_1_2
             }
 
 
-        
+            try
+            {
+                Neighbourhood curentNeig = allNeighbourhoods[selectedNeighbourhood];
+                allProperties = curentNeig.GETproperties();
+               
+
+
+                
+                for (int i = 0; i < allProperties.Length; i++)
+                {
+                    allProperties[i].SETpropertyID(dgProp.Rows[i].Cells["propID"].Value.ToString());
+                    allProperties[i].SETpropertyName(dgProp.Rows[i].Cells["propName"].Value.ToString());
+                    allProperties[i].SEThostID(dgProp.Rows[i].Cells["propHostID"].Value.ToString());
+                    allProperties[i].SEThostName(dgProp.Rows[i].Cells["propHostName"].Value.ToString());
+                    allProperties[i].SETnumHostProperties(Convert.ToInt32(dgProp.Rows[i].Cells["propHostProperties"].Value));  ///Deals with int
+                    allProperties[i].SETlatitude(dgProp.Rows[i].Cells["propLatitude"].Value.ToString());  
+                    allProperties[i].SETlongitude(dgProp.Rows[i].Cells["propLongitude"].Value.ToString()); 
+                    allProperties[i].SETroomType(dgProp.Rows[i].Cells["propRoomType"].Value.ToString()); 
+                    allProperties[i].SETprice(dgProp.Rows[i].Cells["propPrice"].Value.ToString()); 
+                    allProperties[i].SETminNightNum(Convert.ToInt32(dgProp.Rows[i].Cells["propMinNight"].Value)); 
+                    allProperties[i].SETdaysAvailable(Convert.ToInt32(dgProp.Rows[i].Cells["propDaysAvailable"].Value));                    
+                   
+                }
+
+
+            }
+            catch
+            {
+                MessageBox.Show("could not read data from property data grid");
+            }
+
+            //reading the property values (This one is gunna be a pain in the ass)
+
+
+
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
             read(); 
         }
-
     }
 
 

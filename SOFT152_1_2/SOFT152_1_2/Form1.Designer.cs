@@ -32,22 +32,22 @@
             this.OFDGetData = new System.Windows.Forms.OpenFileDialog();
             this.btnOpenFile = new System.Windows.Forms.Button();
             this.dgDist = new System.Windows.Forms.DataGridView();
-            this.dgNeig = new System.Windows.Forms.DataGridView();
-            this.dgProp = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HostID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hostName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NumHostProperties = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Latitude = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Longitude = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roomType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.minNight = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.daysAvailable = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.neigName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.distName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgNeig = new System.Windows.Forms.DataGridView();
+            this.neigName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgProp = new System.Windows.Forms.DataGridView();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.propID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.propName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.propHostID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.propHostName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.propHostProperties = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.propLatitude = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.propLongitude = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.propRoomType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.propPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.propMinNight = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.propDaysAvailable = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgDist)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgNeig)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgProp)).BeginInit();
@@ -93,6 +93,11 @@
             this.dgDist.TabIndex = 7;
             this.dgDist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgDist_CellContentClick);
             // 
+            // distName
+            // 
+            this.distName.HeaderText = "Name";
+            this.distName.Name = "distName";
+            // 
             // dgNeig
             // 
             this.dgNeig.AllowUserToAddRows = false;
@@ -107,22 +112,27 @@
             this.dgNeig.TabIndex = 8;
             this.dgNeig.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgNeig_CellContentClick);
             // 
+            // neigName
+            // 
+            this.neigName.HeaderText = "Name";
+            this.neigName.Name = "neigName";
+            // 
             // dgProp
             // 
             this.dgProp.AllowUserToAddRows = false;
             this.dgProp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgProp.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.dataGridViewTextBoxColumn2,
-            this.HostID,
-            this.hostName,
-            this.NumHostProperties,
-            this.Latitude,
-            this.Longitude,
-            this.roomType,
-            this.Price,
-            this.minNight,
-            this.daysAvailable});
+            this.propID,
+            this.propName,
+            this.propHostID,
+            this.propHostName,
+            this.propHostProperties,
+            this.propLatitude,
+            this.propLongitude,
+            this.propRoomType,
+            this.propPrice,
+            this.propMinNight,
+            this.propDaysAvailable});
             this.dgProp.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgProp.Location = new System.Drawing.Point(398, 12);
             this.dgProp.MultiSelect = false;
@@ -130,80 +140,70 @@
             this.dgProp.Size = new System.Drawing.Size(1218, 440);
             this.dgProp.TabIndex = 9;
             // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // HostID
-            // 
-            this.HostID.HeaderText = "HostID";
-            this.HostID.Name = "HostID";
-            // 
-            // hostName
-            // 
-            this.hostName.HeaderText = "Host Name";
-            this.hostName.Name = "hostName";
-            // 
-            // NumHostProperties
-            // 
-            this.NumHostProperties.HeaderText = "Host Properties";
-            this.NumHostProperties.Name = "NumHostProperties";
-            // 
-            // Latitude
-            // 
-            this.Latitude.HeaderText = "Latitude";
-            this.Latitude.Name = "Latitude";
-            // 
-            // Longitude
-            // 
-            this.Longitude.HeaderText = "Longitude";
-            this.Longitude.Name = "Longitude";
-            // 
-            // roomType
-            // 
-            this.roomType.HeaderText = "Room Type";
-            this.roomType.Name = "roomType";
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.Name = "Price";
-            // 
-            // minNight
-            // 
-            this.minNight.HeaderText = "Min. stay ";
-            this.minNight.Name = "minNight";
-            // 
-            // daysAvailable
-            // 
-            this.daysAvailable.HeaderText = "Days Available";
-            this.daysAvailable.Name = "daysAvailable";
-            // 
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(284, 521);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 10;
-            this.btnSave.Text = "button1";
+            this.btnSave.Text = "read";
             this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // neigName
+            // propID
             // 
-            this.neigName.HeaderText = "Name";
-            this.neigName.Name = "neigName";
+            this.propID.HeaderText = "ID";
+            this.propID.Name = "propID";
             // 
-            // distName
+            // propName
             // 
-            this.distName.HeaderText = "Name";
-            this.distName.Name = "distName";
+            this.propName.HeaderText = "Name";
+            this.propName.Name = "propName";
+            // 
+            // propHostID
+            // 
+            this.propHostID.HeaderText = "HostID";
+            this.propHostID.Name = "propHostID";
+            // 
+            // propHostName
+            // 
+            this.propHostName.HeaderText = "Host Name";
+            this.propHostName.Name = "propHostName";
+            // 
+            // propHostProperties
+            // 
+            this.propHostProperties.HeaderText = "Host Properties";
+            this.propHostProperties.Name = "propHostProperties";
+            // 
+            // propLatitude
+            // 
+            this.propLatitude.HeaderText = "Latitude";
+            this.propLatitude.Name = "propLatitude";
+            // 
+            // propLongitude
+            // 
+            this.propLongitude.HeaderText = "Longitude";
+            this.propLongitude.Name = "propLongitude";
+            // 
+            // propRoomType
+            // 
+            this.propRoomType.HeaderText = "Room Type";
+            this.propRoomType.Name = "propRoomType";
+            // 
+            // propPrice
+            // 
+            this.propPrice.HeaderText = "Price";
+            this.propPrice.Name = "propPrice";
+            // 
+            // propMinNight
+            // 
+            this.propMinNight.HeaderText = "Min. stay ";
+            this.propMinNight.Name = "propMinNight";
+            // 
+            // propDaysAvailable
+            // 
+            this.propDaysAvailable.HeaderText = "Days Available";
+            this.propDaysAvailable.Name = "propDaysAvailable";
             // 
             // Form1
             // 
@@ -233,20 +233,20 @@
         private System.Windows.Forms.DataGridView dgDist;
         private System.Windows.Forms.DataGridView dgNeig;
         private System.Windows.Forms.DataGridView dgProp;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HostID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hostName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NumHostProperties;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Latitude;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Longitude;
-        private System.Windows.Forms.DataGridViewTextBoxColumn roomType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn minNight;
-        private System.Windows.Forms.DataGridViewTextBoxColumn daysAvailable;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.DataGridViewTextBoxColumn distName;
         private System.Windows.Forms.DataGridViewTextBoxColumn neigName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn propID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn propName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn propHostID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn propHostName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn propHostProperties;
+        private System.Windows.Forms.DataGridViewTextBoxColumn propLatitude;
+        private System.Windows.Forms.DataGridViewTextBoxColumn propLongitude;
+        private System.Windows.Forms.DataGridViewTextBoxColumn propRoomType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn propPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn propMinNight;
+        private System.Windows.Forms.DataGridViewTextBoxColumn propDaysAvailable;
     }
 }
 

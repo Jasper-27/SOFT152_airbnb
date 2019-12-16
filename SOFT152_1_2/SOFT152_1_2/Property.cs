@@ -8,7 +8,7 @@
         string propertyName;
         string hostID;
         string hostName;
-        int NumOfHostProperties;
+        int numHostProperties;
         string latitude;
         string longitude;
         string roomType;
@@ -23,7 +23,7 @@
             this.propertyName = propertyName;
             this.hostID = hostID;
             this.hostName = hostName;
-            this.NumOfHostProperties = NumHostOfProperties;
+            this.numHostProperties = NumHostOfProperties;
             this.latitude = latitude;
             this.longitude = longitude;
             this.roomType = roomType;
@@ -56,7 +56,7 @@
         }
         public int GETNumOfHostProperties()
         {
-            return NumOfHostProperties;
+            return numHostProperties;
         }
         public string GETlatitude()
         {
@@ -97,15 +97,19 @@
         {
             hostID = newHostID;
         }
-        public void SETNumOfHostPropertys(int newNumOfHostProperties)
+        public void SEThostName(string newHostName)
         {
-            NumOfHostProperties = newNumOfHostProperties;
+            hostName = newHostName;
+        }
+        public void SETnumHostProperties(int newNumHostProperties)
+        {
+            numHostProperties = newNumHostProperties;
         }
         public void SETlatitude(string NewLatitude)
         {
             latitude = NewLatitude;
         }
-        public void SETlongirude(string newLongitude)
+        public void SETlongitude(string newLongitude)
         {
             longitude = newLongitude;
         }
