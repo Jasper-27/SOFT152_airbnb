@@ -36,7 +36,6 @@
             this.dgNeig = new System.Windows.Forms.DataGridView();
             this.neigName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgProp = new System.Windows.Forms.DataGridView();
-            this.btnSave = new System.Windows.Forms.Button();
             this.propID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.propName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.propHostID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +47,10 @@
             this.propPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.propMinNight = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.propDaysAvailable = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgDist)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgNeig)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgProp)).BeginInit();
@@ -55,9 +58,9 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(585, 458);
+            this.btnRefresh.Location = new System.Drawing.Point(1366, 349);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(469, 82);
+            this.btnRefresh.Size = new System.Drawing.Size(149, 91);
             this.btnRefresh.TabIndex = 5;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -71,27 +74,27 @@
             // 
             // btnOpenFile
             // 
-            this.btnOpenFile.Location = new System.Drawing.Point(57, 505);
+            this.btnOpenFile.Location = new System.Drawing.Point(1366, 257);
             this.btnOpenFile.Name = "btnOpenFile";
-            this.btnOpenFile.Size = new System.Drawing.Size(98, 54);
+            this.btnOpenFile.Size = new System.Drawing.Size(149, 86);
             this.btnOpenFile.TabIndex = 6;
-            this.btnOpenFile.Text = "Select file";
+            this.btnOpenFile.Text = "Open";
             this.btnOpenFile.UseVisualStyleBackColor = true;
             this.btnOpenFile.Click += new System.EventHandler(this.button1_Click);
             // 
             // dgDist
             // 
-            this.dgDist.AllowUserToAddRows = false;
             this.dgDist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgDist.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.distName});
             this.dgDist.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dgDist.Location = new System.Drawing.Point(12, 12);
+            this.dgDist.Location = new System.Drawing.Point(28, 153);
             this.dgDist.MultiSelect = false;
             this.dgDist.Name = "dgDist";
-            this.dgDist.Size = new System.Drawing.Size(187, 440);
+            this.dgDist.Size = new System.Drawing.Size(157, 269);
             this.dgDist.TabIndex = 7;
-            this.dgDist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgDist_CellContentClick);
+            this.dgDist.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgDist_RowEnter);
+            this.dgDist.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgDist_RowsAdded);
             // 
             // distName
             // 
@@ -105,12 +108,13 @@
             this.dgNeig.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.neigName});
             this.dgNeig.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dgNeig.Location = new System.Drawing.Point(205, 12);
+            this.dgNeig.Location = new System.Drawing.Point(28, 453);
             this.dgNeig.MultiSelect = false;
             this.dgNeig.Name = "dgNeig";
-            this.dgNeig.Size = new System.Drawing.Size(187, 440);
+            this.dgNeig.Size = new System.Drawing.Size(154, 396);
             this.dgNeig.TabIndex = 8;
             this.dgNeig.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgNeig_CellContentClick);
+            this.dgNeig.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgNeig_RowEnter);
             // 
             // neigName
             // 
@@ -134,21 +138,11 @@
             this.propMinNight,
             this.propDaysAvailable});
             this.dgProp.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dgProp.Location = new System.Drawing.Point(398, 12);
+            this.dgProp.Location = new System.Drawing.Point(212, 153);
             this.dgProp.MultiSelect = false;
             this.dgProp.Name = "dgProp";
-            this.dgProp.Size = new System.Drawing.Size(1218, 440);
+            this.dgProp.Size = new System.Drawing.Size(1145, 696);
             this.dgProp.TabIndex = 9;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(284, 521);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 10;
-            this.btnSave.Text = "read";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // propID
             // 
@@ -205,11 +199,55 @@
             this.propDaysAvailable.HeaderText = "Days Available";
             this.propDaysAvailable.Name = "propDaysAvailable";
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(1366, 153);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(149, 98);
+            this.btnSave.TabIndex = 10;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(23, 125);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 25);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Districts";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(23, 425);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(170, 25);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Neighbourhoods";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(207, 125);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(110, 25);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Properties";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1628, 748);
+            this.ClientSize = new System.Drawing.Size(1527, 861);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dgProp);
             this.Controls.Add(this.dgNeig);
@@ -223,6 +261,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgNeig)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgProp)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -247,6 +286,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn propPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn propMinNight;
         private System.Windows.Forms.DataGridViewTextBoxColumn propDaysAvailable;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

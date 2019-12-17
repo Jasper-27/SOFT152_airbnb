@@ -18,12 +18,15 @@ namespace SOFT152_1_2
         public bool endOfDistricts = false;
         public bool endOfNeighbourhoods = false;
 
+        public bool autoCellAdd = true;
+
 
 
         public int selectedDistrict;
         public int selectedNeighbourhood;
 
         StreamReader inData;
+        StreamWriter outData; 
         //int dataLinCount = File.ReadLines(theFile).Count();
 
 
@@ -35,7 +38,7 @@ namespace SOFT152_1_2
 
         public Form1()
         {
-
+            
             InitializeComponent();
 
 
@@ -50,6 +53,7 @@ namespace SOFT152_1_2
                 theFile = ("data.txt"); 
             }
 
+
             setup();
 
             
@@ -60,7 +64,7 @@ namespace SOFT152_1_2
 
         private District gogetDistrict()
         {
-
+           
             District tempDistrict;
 
 
@@ -134,46 +138,55 @@ namespace SOFT152_1_2
 
         private void setup()
         {
-            endOfDistricts = false;
-            endOfNeighbourhoods = false;
-
-            inData = new StreamReader(theFile);
-            allDistricts = new District[0];
-            allNeighbourhoods = new Neighbourhood[0];
-            allProperties = new Property[0];
-
-            while (endOfDistricts == false)
+            try 
             {
-                Array.Resize(ref allDistricts, allDistricts.Length + 1);
-                allDistricts[allDistricts.Length - 1] = gogetDistrict();
 
-                //Checks the library name to see if the library iteself is set to null 
-                string tempName = allDistricts[allDistricts.Length - 1].GETdistrictName();
+                endOfDistricts = false;
+                endOfNeighbourhoods = false;
 
-                ///Gets rid of the final item in the array if it is set to null. This makes sure there is the correct number of librarys present. 
-                if (tempName == null)
+                inData = new StreamReader(theFile);
+                allDistricts = new District[0];
+                allNeighbourhoods = new Neighbourhood[0];
+                allProperties = new Property[0];
+
+                while (endOfDistricts == false)
                 {
-                    Array.Resize(ref allDistricts, allDistricts.Length - 1);
+                    Array.Resize(ref allDistricts, allDistricts.Length + 1);
+                    allDistricts[allDistricts.Length - 1] = gogetDistrict();
+
+                    //Checks the library name to see if the library iteself is set to null 
+                    string tempName = allDistricts[allDistricts.Length - 1].GETdistrictName();
+
+                    ///Gets rid of the final item in the array if it is set to null. This makes sure there is the correct number of librarys present. 
+                    if (tempName == null)
+                    {
+                        Array.Resize(ref allDistricts, allDistricts.Length - 1);
+                    }
+
+                }
+                inData.Close();
+
+
+                //fills in the district table
+                string[] tempDistNames = new string[allDistricts.Length];
+
+                //Makes an array string with the district names
+                for (int i = 0; i < tempDistNames.Length; i++)
+                {
+                    tempDistNames[i] = allDistricts[i].GETdistrictName();
+
                 }
 
+                for (int i = 0; i < tempDistNames.Length; i++)
+                {
+                    dgDist.Rows.Add(tempDistNames[i]);
+                }
             }
-            inData.Close();
-
-
-            //fills in the district table
-            string[] tempDistNames = new string[allDistricts.Length];
-
-            //Makes an array string with the district names
-            for (int i = 0; i < tempDistNames.Length; i++)
+            catch
             {
-                tempDistNames[i] = allDistricts[i].GETdistrictName();
-
+                MessageBox.Show("ERROR reading from file"); 
             }
 
-            for (int i = 0; i < tempDistNames.Length; i++)
-            {
-                dgDist.Rows.Add(tempDistNames[i]);
-            }
         }
 
 
@@ -184,9 +197,6 @@ namespace SOFT152_1_2
             dgProp.Rows.Clear();
 
             setup();
-
-           
-
    
         }
 
@@ -206,99 +216,7 @@ namespace SOFT152_1_2
             setup();
         }
 
-        private void dgDist_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-
-            try
-            {
-                selectedDistrict = dgDist.Rows[e.RowIndex].Index;
-
-                dgNeig.Rows.Clear();
-                dgProp.Rows.Clear();
-
-                District tempDistrict = allDistricts[selectedDistrict];
-                Neighbourhood[] tempNeighbourhoods = tempDistrict.GETneighbourhoods();
-
-                string[] tempNeighNames = new string[tempNeighbourhoods.Length];
-
-               
-
-                //Makes an array string with the district names
-                for (int i = 0; i < tempNeighNames.Length; i++)
-                {
-                    tempNeighNames[i] = tempNeighbourhoods[i].GETneighbourhoodName();
-                    dgNeig.Rows.Add(tempNeighNames[i]);
-                }
-
-            }
-            catch
-            {
-                MessageBox.Show("Make a valid selection");
-            }
-
-            
-        }
-
-        private void dgNeig_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-            
-
-            try
-            {
-                selectedNeighbourhood = dgNeig.Rows[e.RowIndex].Index;
-
-                dgProp.Rows.Clear();
-
-
-                District tempDistrict = allDistricts[selectedDistrict];
-                Neighbourhood[] tempNeighbourhoods = tempDistrict.GETneighbourhoods();
-
-                
-                Neighbourhood tempNeighbourhood = tempNeighbourhoods[selectedNeighbourhood];
-
-                Property[] tempProperties = tempNeighbourhood.GETproperties();
-
-                
-
-                //Makes an array string with the district names
-                for (int i = 0; i < tempProperties.Length; i++)
-                {
-                    Property tempProp = tempProperties[i];
-
-                    string[] row = new string[11]; 
-
-                    row[0] = tempProp.GETpropertyID();
-                    row[1] = tempProp.GETpropertyName();
-                    row[2] = tempProp.GEThostID(); 
-                    row[3] = tempProp.GEThostName();
-                    row[4] = tempProp.GETNumOfHostProperties().ToString();
-                    row[5] = tempProp.GETlatitude();
-                    row[6] = tempProp.GETlongitude();
-                    row[7] = tempProp.GETroomType();
-                    row[8] = tempProp.GETprice();
-                    row[9] = tempProp.GETminNightNum().ToString();
-                    row[10] = tempProp.GETdaysAvailable().ToString();
-                    
-
-                    //StempNeighNames[i] = tempNeighbourhoods[i].GETneighbourhoodName();
-                    dgProp.Rows.Add(row);
-                }
-
-
-            }
-            catch
-            {
-                MessageBox.Show("Make a valid Neigbourhood selection");
-            }
-
-        }
-
-
-        /// <summary>
-        /// This is where we are doing stuff now
-        /// </summary>
+        //This is the function that reads the data 
         public void read()
         {
            // MessageBox.Show(dgDist.Rows[0]);
@@ -348,6 +266,8 @@ namespace SOFT152_1_2
                 
                 for (int i = 0; i < allProperties.Length; i++)
                 {
+
+                    /// this bit gets the data from the property datagrid 
                     allProperties[i].SETpropertyID(dgProp.Rows[i].Cells["propID"].Value.ToString());
                     allProperties[i].SETpropertyName(dgProp.Rows[i].Cells["propName"].Value.ToString());
                     allProperties[i].SEThostID(dgProp.Rows[i].Cells["propHostID"].Value.ToString());
@@ -369,15 +289,165 @@ namespace SOFT152_1_2
                 MessageBox.Show("could not read data from property data grid");
             }
 
-            //reading the property values (This one is gunna be a pain in the ass)
-
-
-
         }
+
+
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            read(); 
+            read();
+
+
+            //Saving the data 
+
+            outData = new StreamWriter(theFile);
+
+
+            foreach (District dis in allDistricts)
+            {
+                outData.WriteLine(dis.GETdistrictName()); 
+                outData.WriteLine(dis.GETnumOfNeighbourhoods());
+
+                allNeighbourhoods = dis.GETneighbourhoods();
+                foreach (Neighbourhood nei in allNeighbourhoods)
+                {
+                    outData.WriteLine(nei.GETneighbourhoodName());
+                    outData.WriteLine(nei.GETnumOfProperties());
+
+                    allProperties = nei.GETproperties();
+                    foreach (Property pro in allProperties)
+                    {
+                        outData.WriteLine(pro.GETpropertyID());
+                        outData.WriteLine(pro.GETpropertyName());
+                        outData.WriteLine(pro.GEThostID());
+                        outData.WriteLine(pro.GEThostName());
+                        outData.WriteLine(pro.GETNumOfHostProperties().ToString());
+                        outData.WriteLine(pro.GETlatitude());
+                        outData.WriteLine(pro.GETlongitude());
+                        outData.WriteLine(pro.GETroomType());
+                        outData.WriteLine(pro.GETprice());
+                        outData.WriteLine(pro.GETminNightNum().ToString());
+                        outData.WriteLine(pro.GETdaysAvailable().ToString());
+                    }
+
+
+                }
+                
+
+
+            }
+
+            outData.Close(); 
+        }
+
+        private void dgDist_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            if  (autoCellAdd == false)
+            {
+                MessageBox.Show("Hello"); 
+            }
+        }
+
+
+        private void dgDist_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            autoCellAdd = true;
+
+            try
+            {
+                selectedDistrict = dgDist.Rows[e.RowIndex].Index;
+
+                dgNeig.Rows.Clear();
+                dgProp.Rows.Clear();
+
+                District tempDistrict = allDistricts[selectedDistrict];
+                Neighbourhood[] tempNeighbourhoods = tempDistrict.GETneighbourhoods();
+
+                string[] tempNeighNames = new string[tempNeighbourhoods.Length];
+
+
+
+                //Makes an array string with the district names
+                for (int i = 0; i < tempNeighNames.Length; i++)
+                {
+                    tempNeighNames[i] = tempNeighbourhoods[i].GETneighbourhoodName();
+                    dgNeig.Rows.Add(tempNeighNames[i]);
+                }
+
+            }
+            catch
+            {
+                MessageBox.Show("Make a valid selection");
+            }
+
+            autoCellAdd = false;
+        }
+
+        private void dgNeig_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            autoCellAdd = true;
+
+
+            try
+            {
+                selectedNeighbourhood = dgNeig.Rows[e.RowIndex].Index;
+
+                dgProp.Rows.Clear();
+
+
+                District tempDistrict = allDistricts[selectedDistrict];
+                Neighbourhood[] tempNeighbourhoods = tempDistrict.GETneighbourhoods();
+
+
+                Neighbourhood tempNeighbourhood = tempNeighbourhoods[selectedNeighbourhood];
+
+                Property[] tempProperties = tempNeighbourhood.GETproperties();
+
+
+
+                //Makes an array string with the district names
+                for (int i = 0; i < tempProperties.Length; i++)
+                {
+                    Property tempProp = tempProperties[i];
+
+                    string[] row = new string[11];
+
+                    row[0] = tempProp.GETpropertyID();
+                    row[1] = tempProp.GETpropertyName();
+                    row[2] = tempProp.GEThostID();
+                    row[3] = tempProp.GEThostName();
+                    row[4] = tempProp.GETNumOfHostProperties().ToString();
+                    row[5] = tempProp.GETlatitude();
+                    row[6] = tempProp.GETlongitude();
+                    row[7] = tempProp.GETroomType();
+                    row[8] = tempProp.GETprice();
+                    row[9] = tempProp.GETminNightNum().ToString();
+                    row[10] = tempProp.GETdaysAvailable().ToString();
+
+
+                    //StempNeighNames[i] = tempNeighbourhoods[i].GETneighbourhoodName();
+                    dgProp.Rows.Add(row);
+                }
+
+
+            }
+            catch
+            {
+                MessageBox.Show("Make a valid Neigbourhood selection");
+            }
+
+            autoCellAdd = false;
+
+        }
+
+        private void dgNeig_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
