@@ -9461,7 +9461,7 @@ Private room
 2
 48
 Manhattan
-2
+4
 Gramercy
 65
 4643192
@@ -10259,2348 +10259,282 @@ Entire home/apt
 2
 112
 23629960
-"Bright spacious loft in the heart of Soho"
-33153151
-Ellen
-1
-40.7275
--74.0001
-Entire home/apt
-250
-2
+"Bright spa
+
+
 0
-24033812
-Greenwich Village Master Bedroom!
-180892493
-Anokhi
-1
-40.72947
--73.9995
-Private room
-100
-1
+
+
+
+
 0
-Queens
-3
-Astoria
-11
-7970110
-ASTORIA APARTMENT AVAILABLE
-4831239
-Mariand
-1
-40.76583
--73.92878
-Entire home/apt
-75
-1
 0
-7972825
-"Lovely kitschy 1BR + Foldout Couch"
-42073103
-Brent
-1
-40.75535
--73.92609
-Entire home/apt
-100
-2
+
+
+
+
 0
-7979433
-Comfortable 1B in hot-spot Queens
-37801911
-Marissa
-1
-40.75959
--73.92439
-Entire home/apt
-100
-1
+
+
+
+
 0
-8045552
-"A Gem Studio Apartment Astoria NYC"
-42488595
-Tony
-1
-40.76762
--73.90727
-Entire home/apt
-87
-3
-210
-8111321
-Huge 1 BR entire apt
-32441059
-Cory
-1
-40.768
--73.92429
-Entire home/apt
-70
-2
-159
-8167145
-Cherry Blossom Apartment
-1510638
-Alessandro
-1
-40.75535
--73.91397
-Entire home/apt
-135
-7
-157
-8266969
-Cozy and Comfortable
-43590457
-Michael
-1
-40.76599
--73.91777
-Private room
-75
-3
 0
-8272122
-Cozy Room 4 stops from 5 avenue
-2417692
-Verena
-2
-40.75748
--73.91221
-Private room
-100
-15
-61
-8274931
-Stunning apartment with view only 5 min from metro
-43633040
-Nika
-1
-40.76086
--73.92604
-Entire home/apt
-85
-3
+
 0
-8368708
-Cozy 1 bedroom apt Prime Location!!
-20413250
-Sara
-2
-40.76307
--73.92247
-Entire home/apt
-150
-14
+__
 0
-8441969
-"Full Bedroom Avaliable Astoria"
-1411399
-Carlos
-5
-40.76615
--73.91325
-Private room
-99
-1
-323
-Far Rockaway
-12
-26455093
-Presidential Comfort
-198476726
-Cathy
-1
-40.60395
--73.74904
-Private room
-55
-1
-177
-28328473
-Modern private studio in rockaway
-213910720
-Ayodele
-1
-40.59752
--73.76337
-Private room
-50
-1
-71
-28600360
-Cozy studio near the beach and St. John�s hospital
-36383387
-Suleidy
-1
-40.60106
--73.75154
-Entire home/apt
-63
-1
-129
-29989586
-Cozy private bedroom
-225454310
-Tosin
+Jasper Land 
 4
-40.59894
--73.75629
-Private room
-85
 1
-362
-30043557
-Relaxing private bedroom
-225454310
-Tosin
-4
-40.59802
--73.75497
-Private room
-70
 1
-361
-30043809
-Comfy private bedroom
-225454310
-Tosin
-4
-40.59836
--73.75555
-Private room
-50
-1
-363
-30376150
-Nelson-Hamilton Family
-225750872
-Lauria
-1
-40.59349
--73.76377
-Private room
-60
-1
-90
-30634438
-Charming entire house
-225454310
-Tosin
-4
-40.5998
--73.75586
-Entire home/apt
-145
-1
-311
-31600930
-Frum kosher house for rent
-57135136
-Naftoli
-1
-40.59794
--73.74688
-Entire home/apt
-250
-10
-179
-32634041
-Beach suite
-244964029
-Anthony
-1
-40.59639
--73.7486
-Entire home/apt
-147
-4
-107
-34253279
-"Jfk min away. Welcome to the beach! Fun sand surf"
-125320407
-Sata
-5
-40.60412
--73.75163
-Private room
-875
-2
-365
-35199464
-"Penthouse on the beach 3 floors of art fun surf"
-125320407
-Sata
-5
-40.59636
--73.7413
-Entire home/apt
-900
-2
-365
-Flushing
-30
-32363
-Fully Furnished Basement Apartment
-140025
-Fredah
-1
-40.74028
--73.83168
-Private room
-140
-2
-1
-546383
-My Little Guest Room in Flushing
-2680820
-Linda
-3
-40.75578
--73.81948
-Private room
-55
-1
-332
-748656
-Cozy Vintage Studio in Flushing (Close to LGA/JFK)
-1687335
-Aim�e
-1
-40.76372
--73.79201
-Shared room
-108
-5
+_
+_
+_
+_
 0
-774791
-Very clean bed room in queens NYC
-1528912
-Weiwei
-2
-40.75612
--73.82517
-Private room
-55
-2
-282
-818337
-Newly Reno Room with Private Bath^
-4241953
-Celeste
-4
-40.75979
--73.81016
-Private room
-57
-2
-308
-843491
-Clean 1 bedroom with private bath :)
-4241953
-Celeste
-4
-40.76074
--73.80969
-Private room
-80
-3
-342
-848707
-"Bright Room in Queens Shared bath%"
-4241953
-Celeste
-4
-40.76
--73.81117
-Private room
-60
-2
-314
-848722
-Lovely BR In The ? Of Flushing! Free Metro Card
-4241953
-Celeste
-4
-40.76014
--73.81146
-Private room
-45
-2
-292
-886808
-"Free Metrocard* Safe & Affordable"
-4701443
-Christina
-2
-40.75088
--73.81029
-Private room
-55
-1
-298
-886833
-"Private Suite Free Metrocard*"
-4701443
-Christina
-2
-40.7525
--73.81126
-Entire home/apt
-81
-1
-263
-927597
-(2) CLEAN HOME AWAY FROM HOME!
-4983320
-Terri
-2
-40.75444
--73.83057
-Private room
-76
-1
+_
+_
+_
+_
 0
-989976
-Three Bedroom NY Private Apartment
-5435208
-Rose
-1
-40.74142
--73.8202
-Entire home/apt
-160
-3
-298
-1042806
-My Other Little Guestroom
-2680820
-Linda
-3
-40.75334
--73.81699
-Private room
-59
-1
-322
-1546945
-(1) CLEAN HOME AWAY FROM HOME!
-4983320
-Terri
-2
-40.75431
--73.83131
-Private room
-59
-1
 0
-2757036
-Bayview room
-14103991
-Ruth
-4
-40.75606
--73.81954
-Private room
-55
+fdfdfdf
 1
-333
-2801300
-cozy room /female guests
-14103991
-Ruth
-4
-40.75611
--73.81957
-Private room
-75
-1
-355
-2889377
- garden view  / female guest 
-14103991
-Ruth
-4
-40.75494
--73.81818
-Private room
-59
-2
-185
-3112284
-Spacious room in flushing ny ??
-15815237
-Mack
-1
-40.76428
--73.83225
-Private room
-59
-3
-158
-4235620
-Elegant furnished 1BR apartment
-21979970
-Louise & Thomas
-1
-40.73303
--73.79736
-Entire home/apt
-100
-7
-268
-4637014
-??????????????????2 br close to everything
-12459436
-Zena
-2
-40.75398
--73.82778
-Entire home/apt
-119
-3
-319
-4998221
-????
-25774748
-Dong Ming
-2
-40.76435
--73.83211
-Private room
-89
-1
-365
-5020687
-BRAND NEW condo in Flushing!
-10366837
-Jia
-3
-40.75784
--73.83181
-Entire home/apt
-72
-2
-102
-5340262
-????(Sunnyhome7)
-27673980
-Amy
-8
-40.74569
--73.83299
-Private room
-50
-1
-56
-5414911
-�???? �?????PrivateBathroom
-27673980
-Amy
-8
-40.74428
--73.8333
-Private room
-65
-1
-25
-5424042
-4 Bedroom Apt On Kissena Park in NYC
-23234988
-Ann
-6
-40.75077
--73.80676
-Entire home/apt
-259
-1
-257
-5762947
-�????� ?????PrivateBathroom
-27673980
-Amy
-8
-40.74513
--73.83139
-Private room
-60
-1
-76
-5895056
-2 Flushing Sunny Garden View ?????
-30616879
-Anna
-3
-40.754
--73.80701
-Private room
-47
-2
-311
-5895082
-45 Ave 159 st Flushing private room
-30616879
-Anna
-3
-40.76173
--73.80767
-Private room
-55
-2
-342
-5940268
-The Big Room in Flushing
-30839692
-Stavros
-3
-40.75518
--73.80422
-Private room
-50
-1
-243
-6074975
-Home On Kissena Park in Flushing NYC
-23234988
-Ann
-6
-40.74896
--73.80715
-Entire home/apt
-369
-2
-256
-Staten Island
-13
-Randall Manor
-4
-29701014
-"Newly Renovated 3BR Apt Minutes away from SI Ferry"
-223504937
-Ellouise
-1
-40.62692
--74.1299
-Entire home/apt
-109
-3
-121
-33212719
-NYC cozy apartment close to staten island ferry
-250065719
-Martha
-1
-40.63211
--74.12557
-Entire home/apt
-85
-1
-316
-34870577
-Happy Home 3
-158178970
-Raquel
-3
-40.63136
--74.12559
-Shared room
-13
-1
-8
-35455986
-Newly renovated 1 bedroom apartment!
-63227531
-Marwa
-2
-40.62845
--74.12294
-Entire home/apt
-99
-2
-342
-Richmondtown
-1
-12966225
-"1 bedroom apt comforts of home close to all.."
-71312760
-Don
-1
-40.57093
--74.12429
-Entire home/apt
-78
-3
-300
-Rosebank
-7
-20676841
-Private room 15 MINS AWAY FROM FERRY by bus
-147952036
-Mimi
-1
-40.61353
--74.06724
-Private room
-55
-2
-114
-28609705
-20 mins from Manhattan. 10 mins frm S.I. ferry.
-215922295
-Muneeb
-1
-40.61088
--74.07327
-Entire home/apt
-200
-5
-244
-29410055
-Private community close to all the NYC & NJ action
-199539833
-Vince
-1
-40.60816
--74.07634
-Entire home/apt
-90
-3
-247
-30250766
-"Staten Island - Free Wifi Parking Space Near NYC"
-225160295
-Yun
-1
-40.61438
--74.0664
-Entire home/apt
-138
-1
-291
-31957975
-"ENTIRE apt 2 Bdr Commercial Area Private Entrance"
-236334741
-Wendy
-1
-40.61588
--74.06711
-Entire home/apt
-100
-1
-151
-34443205
-"""Hop and Skip to NYC"""
-35819327
-Annette
-1
-40.61471
--74.06679
-Entire home/apt
-135
-2
+_
+_
+_
+_
 0
-36237529
-"Beautiful Cozy Room  20mn to FREE ferry"
-272557707
-Marouene
-1
-40.6075
--74.07979
-Private room
-65
-1
-179
-Rossville
-1
-26258351
-Escape NYC in the Borough of Parks!
-6402171
-Taryn
-1
-40.5479
--74.21017
-Entire home/apt
-75
-3
-59
-Shore Acres
-7
-225976
-Sunny cozy multileveled apartment!
-1177947
-Marina
-1
-40.61077
--74.06824
-Entire home/apt
-75
-6
-278
-1665498
-"3rd FL Private Suite w Own Bath & Study Area"
-8821936
-Lynn
-1
-40.61135
--74.06356
-Entire home/apt
-75
-3
-258
-8842185
-Staten Island NYC Marathon
-46305818
-Elizabeth
-1
-40.60597
--74.06208
-Private room
-300
-1
+_
+_
+_
+_
 0
-23336877
-Welcoming House near Verrazano Bridge
-173823383
-Basia
-1
-40.60809
--74.0727
-Entire home/apt
-165
-2
 0
-27492179
-Close to Manhattan Quiet Residential Area
-207205519
-Dimitri
-1
-40.6075
--74.06679
-Private room
-100
-3
-90
-32239170
-FairPlay BNB for alternative life style renters!
-241924064
-Alice
-1
-40.60525
--74.06745
-Entire home/apt
-300
-1
-87
-36355110
-PRIVATE ROOM IN STATEN ISLAND -FOR LADIES ONLY
-201187671
-Tuana
-1
-40.61283
--74.06625
-Private room
-54
-4
-89
-Silver Lake
-2
-8343222
-"New Apartment Close to Ferry"
-43977828
-Mona And Wally
-1
-40.62257
--74.09984
-Entire home/apt
-80
-2
-324
-23308563
-Room in the Safest Neighborhood of Staten Island!
-106897471
-Oswaldo
-1
-40.62422
--74.09316
-Private room
-60
-3
-0
-South Beach
-8
-14588464
-Spacious and Clean Get Away
-90453529
-Maria
-1
-40.59116
--74.08174
-Entire home/apt
-275
-4
-127
-14892623
-Cozy Space w/ Separate Entrance
-93441980
-Tanya
-1
-40.59385
--74.08825
-Private room
-80
-1
-308
-16097822
-Newly renovated Room for 1
-104927746
-Amardeep
-7
-40.59587
--74.08614
-Private room
-35
-4
-323
-22977021
-Spacious Room4 Rent Near Hospital in Staten Island
-46723570
-Kartikeya
-1
-40.5895
--74.09663
-Shared room
+__
 20
-4
+_
+_
+_
+_
 0
-29393457
-2 Private Rooms Near Staten Island Ferry
-204823078
-Maria
-2
-40.58639
--74.08943
-Private room
-100
-2
-86
-31112840
-????
-232509057
-David
-1
-40.59164
--74.08197
-Private room
-55
-1
-363
-34154797
-Private Room Near Staten Island Ferry
-204823078
-Maria
-2
-40.58802
--74.08855
-Private room
-50
-2
-80
-34370296
-Ideal Bedroom in a Friendly Neighborhood
-89599593
-Fernando
-1
-40.59318
--74.08594
-Private room
-99
-1
-176
-St. George
-45
-42882
-New York room with a view
-185978
-Newyorkroomwithaview
-1
-40.64524
--74.08088
-Private room
-70
-2
-312
-1096326
-"Private studio in staten island"
-6024006
-Johnny
-1
-40.64699
--74.08151
-Entire home/apt
-190
-2
-365
-2889387
-New York City near Staten Is. Ferry
-2269517
-Rob&Elle
-1
-40.6427
--74.08001
-Private room
-95
-2
-264
-3037740
-Beautiful turn-of-the-century home
-339586
-Oswaldo
-1
-40.64444
--74.08302
-Entire home/apt
-175
-3
-39
-3153140
-Four-Bedroom Victorian Near Ferry
-13530123
-Lynn
-1
-40.64553
--74.08323
-Entire home/apt
-195
-3
-204
-3743048
-*WARM*Beautiful*Room*ST. GEORGE steps to ferry!
-19143974
-Meghan
-1
-40.64408
--74.07834
-Private room
-58
-3
-279
-4623622
-Victorian with Stunning Views of NYC Harbor
-22506665
-William
-1
-40.64571
--74.07835
-Entire home/apt
-1000
-1
-364
-5899598
-1-BdRm Entire Apartment St. George
-6319915
-Jason
-2
-40.64567
--74.08368
-Entire home/apt
-60
-4
-17
-6330321
-2-Bdrm Entire Apartment St. George
-6319915
-Jason
-2
-40.64524
--74.08326
-Entire home/apt
-89
-4
-25
-8589729
-Magnolia House Saint George
-45201692
-Danforth
-1
-40.64779
--74.0846
-Entire home/apt
-144
-1
-258
-12914239
-Cherry Hill House - Plum Room
-2464187
-Jessica
-2
-40.63834
--74.08291
-Private room
-40
-1
+_
+_
+_
+_
 0
-13882864
-Pre-War 1 BR with Scenic Manhattan Views
-82168970
-Michael
-1
-40.64475
--74.07811
-Private room
-50
-1
 0
-15178725
-2 BR Tropical Getaway near Ferry
-96341353
-Tony & Grace
-3
-40.6437
--74.07944
-Entire home/apt
-150
-1
-336
-15207725
-HugeTropical Bedrm near Ferry
-96341353
-Tony & Grace
-3
-40.64057
--74.0786
-Private room
-110
-1
-337
-15297194
-Cozy Island Bedroom near Ferry
-96341353
-Tony & Grace
-3
-40.64055
--74.0784
-Private room
-70
-1
-336
-17075535
-"Lovely private studio apartment near Manhattan."
-114552571
-John
-1
-40.64332
--74.08283
-Entire home/apt
-120
-2
-191
-17257339
-Contemporary. Spacious Apartment. Close to Ferry.
-115259709
-Paul
-1
-40.64508
--74.08126
-Entire home/apt
-180
-2
-135
-17383677
-"@Ferry HUGE 2Br/3beds. Private Renovated/Stylish.."
-117492425
-Dine
-6
-40.64596
--74.08059
-Entire home/apt
-65
-4
-147
-17475711
-Cherry Hill House - Blue Room
-2464187
-Jessica
-2
-40.63703
--74.08423
-Private room
-50
-1
+_
+_
+_
+_
 0
-18066269
-"@Ferry 2Bedroom/3beds.Private Renovated/Stylish..."
-117492425
-Dine
-6
-40.64425
--74.08056
-Entire home/apt
-72
-4
-152
-18066733
-5br Duplex. @ Ferry!  Water&City Views!
-117492425
-Dine
-6
-40.64605
--74.07897
-Entire home/apt
-289
-4
-230
-20476779
-Enjoy Manhattan without paying Manhattan prices
-146178383
-Diana
-1
-40.64262
--74.08066
-Private room
-68
-2
-57
-20572837
-Private Room right near SI Ferry
-66798529
-Courtney
-1
-40.63975
--74.07774
-Private room
-70
-31
-365
-20729216
-Whole Apt/Private Entry/Free Parking
-148444929
-Karl
-1
-40.64119
--74.08369
-Entire home/apt
-109
-2
-100
-20917712
-"@FERRY Private Cozy Room Renovated&Stylish."
-117492425
-Dine
-6
-40.64579
--74.08027
-Private room
-29
-4
-178
-20941915
-Large Bedroom near Manhattan
-150572903
-Dimitri
-2
-40.64123
--74.08169
-Private room
-85
-2
-356
-21517530
-GSG Inn - A totally private historic landmark inn
-136214003
-Gary
-1
-40.64591
--74.08399
-Entire home/apt
-125
-1
-319
-21901025
-house on the hill with free parking in NYC!
-1483578
-Spiritchild
-1
-40.64537
--74.08381
-Private room
-100
-2
-336
-22276159
-Affordable private room in a home in NYC
-12258594
-Rosa
-2
-40.64497
--74.08456
-Private room
-75
-2
-207
-22792746
-3 Bedroom/4 Beds @ Ferry. Sleeps 7. Beautiful!
-117492425
-Dine
-6
-40.64581
--74.07949
-Entire home/apt
-150
-4
+_
+_
+_
+_
 0
-23059062
-Sunny Basement Apt. in House w/ Garden Near Ferry
-6966161
-Michal
-1
-40.64399
--74.08526
-Entire home/apt
-77
-7
 0
-25205158
-Private Room in St George near Manhattan
-150572903
-Dimitri
-2
-40.6408
--74.08097
-Private room
-75
-3
-128
-25770425
-New York City home away from home :)
-32113962
-Ania
-1
-40.64497
--74.08267
-Entire home/apt
-97
-4
-131
-26889078
-Staten Island Garden Apartment Near Ferry
-199535935
-Tim
-1
-40.64641
--74.08502
-Entire home/apt
-130
-2
-96
-27191921
-Fort Pl B&B
-204752727
-Paul
-1
-40.64275
--74.08001
-Private room
-120
-2
-350
-30852891
-BEAUTIFUL 2 BEDROOM
-133594005
-Carmen
-1
-40.64762
--74.08682
-Entire home/apt
-135
-3
-232
-31365591
-Park&walk2Boat! See LadyLiberty&DTNY all for free!
-233541916
-James
-1
-40.64118
--74.08401
-Private room
-100
-1
+_
+_
+_
+_
 0
-32890299
-"Able to walk to free ferry in Manhattan. Many Bus"
-244544373
-Valerie
-2
-40.63894
--74.08069
-Private room
-100
-1
-365
-33509538
-WALK TO FREE SI FERRY FROM FURNISHED STUDIO APT
-160956
-Neil
-1
-40.64015
--74.08127
-Entire home/apt
-99
-3
-326
-33654480
-Amazing 1 Bedroom Apt! Near the SI Ferry!!
-190246158
-Pavel-Alexey
-1
-40.64448
--74.08485
-Entire home/apt
-68
-2
-65
-35310420
-Cute 2 bedroom apt. -ferry ride to Manhattan
-471024
-Christina
-1
-40.63911
--74.08376
-Entire home/apt
-48
-2
-25
-35619073
-"Ferry to Manhattan  private newly renovated"
-256966373
-Amir
-1
-40.64332
--74.07812
-Entire home/apt
-100
-3
-201
-35683776
-"Cozy 1 BR by St. George Ferry. 2nd Floor apt."
-268430876
-Edilma
-1
-40.63772
--74.08315
-Private room
-42
-1
-87
-35840369
-"Layton Apt. Is Only 20 Min Ride into Manhattan NY"
-269592097
-Selma
-1
-40.64244
--74.08494
-Entire home/apt
-78
-2
-342
-36270376
-"Beautiful home on Staten Island walk to ferry"
-444904
-Janine
-1
-40.64005
--74.07987
-Entire home/apt
-100
-365
-342
-Stapleton
-27
-386555
-A PLACE TO STAY CLOSE TO MANHATTAN
-773928
-Nen
-1
-40.62766
--74.07988
-Private room
-110
-2
-363
-3967160
-Firehouse Loft with Harbor Views
-20555401
-Susannah
-1
-40.63628
--74.07763
-Entire home/apt
-180
-2
-263
-5110224
-Room in artist apartment/ close to Ferry
-26405093
-Jeff
-2
-40.6375
--74.07654
-Private room
-85
-1
-359
-9695052
-Owl's Landing - The Twins
-50068597
-Alex
-3
-40.63573
--74.0772
-Private room
-48
-2
-316
-9882254
-Owl's Landing - Garden Room
-50068597
-Alex
-3
-40.63516
--74.07735
-Private room
-52
-2
-340
-15988392
-"Bright guest room Staten Island New York"
-103281721
-Marina
-1
-40.62903
--74.08206
-Private room
-49
-1
+_
+_
+_
+_
 0
-16883129
-Charming Studio In Historic Home
-26178075
-Tricia
-1
-40.6322
--74.07789
-Entire home/apt
-75
-2
-73
-17992512
-Charming Suite in Historic Home
-74282739
-David
-1
-40.62919
--74.08107
-Entire home/apt
-70
-1
-230
-18240743
-Private Room in Staten Island + Walk-In Closet. #1
-72603148
-Faye
-3
-40.63457
--74.07817
-Private room
-65
-1
-351
-18305741
-Cozy Room Minutes To Manhattan. #2
-72603148
-Faye
-3
-40.63464
--74.07842
-Private room
-55
-1
-362
-18414310
-Cozy Room Easy Access To Manhattan - Room #3
-72603148
-Faye
-3
-40.6348
--74.07734
-Private room
-65
-1
-356
-18606237
-Cozy bedroom in historical home.
-128338539
-Reuben
-4
-40.63167
--74.07971
-Private room
-43
-1
-89
-18669496
-Med. sized bdrm in Historical house on Staten Isl.
-128338539
-Reuben
-4
-40.62981
--74.07998
-Private room
-50
-1
-73
-19691525
-Small room in Historical home on Staten Island
-128338539
-Reuben
-4
-40.63144
--74.07913
-Private room
-34
-1
-78
-22511108
-Historical home N.shore Staten Isl. nr FREE ferry.
-128338539
-Reuben
-4
-40.6322
--74.07913
-Entire home/apt
-95
-30
-178
-26224487
-3 bedroom 1200sq ft apt with exposed brick & deck
-55978113
-Alexis
-2
-40.63701
--74.07624
-Private room
-50
-1
-363
-26280881
-Bedroom in 3br exposed brick apt w deck & garden
-55978113
-Alexis
-2
-40.63705
--74.07722
-Private room
-80
-1
-29
-27876268
-Step back in time and see NYC as it was in the 80s
-26405093
-Jeff
-2
-40.63782
--74.07732
-Private room
-85
-1
-353
-28031322
-"Staten Island Gem 4 bedroom duplex in St. George"
-196770644
-Rafael
-1
-40.63556
--74.07623
-Entire home/apt
-150
-2
-259
-28840001
-Beautiful Cozy Studio Apartment
-217468746
-Timothy
-1
-40.62448
--74.08317
-Entire home/apt
-89
-1
 0
-30962509
-2 Bedrooms with Harbor View
-231352789
-Farah
-3
-40.63448
--74.07837
-Private room
-85
-2
-305
-31560479
-large private Rooms for rent 5 mins from SI Ferry
-236556387
-Samuel
-1
-40.63474
--74.07758
-Private room
-57
-1
-365
-32381165
-"Elegant & Luxurious Clean & Cheerful entire house"
-243147506
-Peter
-1
-40.6279
--74.08202
-Entire home/apt
-275
-2
-182
-32523519
-The Manhattan View
-173009
-Scott And Bea
-1
-40.63285
--74.0778
-Entire home/apt
-125
-2
-252
-32956331
-Green & Cozy Home in NYC's Staten Island
-31757676
-Maite
-1
-40.62493
--74.08318
-Entire home/apt
-100
-7
-16
-34390686
-Large sunny bedroom 5 mins from SI ferry
-185401573
-Akil
-1
-40.63443
--74.07573
-Private room
-50
-1
-179
-36310353
-Staten Island Resort minutes from ferry! Amazing!!
-28586423
-Danielle
-1
-40.62878
--74.07301
-Entire home/apt
-450
-5
-88
-Todt Hill
-4
-8253376
-large house with inground pool/spa
-43524236
-Miran
-1
-40.60926
--74.10092
-Entire home/apt
-429
-2
+_
+_
+_
+_
 0
-29431457
-Large Studio Apartment on Todt Hill
-146363617
-Michael
-1
-40.58392
--74.1078
-Entire home/apt
-62
-14
-268
-33242348
-1 room in private house - 15 mins to NYC & Ferry
-161357125
-Mohsin
-3
-40.60991
--74.11577
-Private room
-50
-2
-52
-33914554
-3 Bedroom Full house - 15mins to NYC/Ferry
-161357125
-Mohsin
-3
-40.61041
--74.11593
-Entire home/apt
-135
-3
-36
-Tompkinsville
-38
-62452
-A SpeciaL!! Private Room in NY
-303939
-Lissette
-6
-40.63536
--74.08537
-Private room
-36
-2
-360
-62461
-B NYC Staten Alternative...
-303939
-Lissette
-6
-40.63627
--74.08543
-Private room
-37
-2
+_
+_
+_
+_
 0
-62787
-C Private Room By The Ferry
-303939
-Lissette
-6
-40.63518
--74.08546
-Private room
-37
-2
-320
-63320
-D Private Che@p Room 2 Explore NYC
-303939
-Lissette
-6
-40.63481
--74.08519
-Private room
-36
-2
-340
-644575
-Enjoy and discover New York Citi
-15523
-Vadim
-2
-40.63358
--74.0833
-Private room
-71
-2
-352
-826307
-"Near Manhatten  NEW Empire Outlets  park!"
-4192794
-Anna
-1
-40.63132
--74.08799
-Private room
-47
-1
-323
-4206034
-Clean and Huge Studio in Safe Area
-18382740
-Takao & Aiko
-1
-40.63481
--74.09591
-Entire home/apt
-99
-7
-326
-5771366
-Authentic New York Vintage Home
-1211067
-"Hans Sandra & Son"
-2
-40.62105
--74.08723
-Private room
-49
-2
-277
-6553257
-Royal Oxford
-34272645
-Jean
-1
-40.63489
--74.08592
-Entire home/apt
-105
-3
-343
-6746003
-Retro Style Living In New York City
-1211067
-"Hans Sandra & Son"
-2
-40.62154
--74.08701
-Private room
-49
-2
-284
-8387338
-Private Room Available in 2BedApt
-44195923
-Dawn
-1
-40.63378
--74.08726
-Private room
-50
-1
 0
-9767864
-Owl's Landing- The Loft
-50068597
-Alex
-3
-40.63661
--74.07868
-Private room
-40
-2
-324
-13222140
-"Private appartment minutes from NY citi. Fantastic loc ation walking distance to manhattan ferry."
-15523
-Vadim
-2
-40.63342
--74.08249
-Private room
-72
-2
-237
-13427412
-Stunning 1 Bedroom Apartment. 8 minutes to Ferry
-3156684
-Michael And Sandra
-1
-40.63163
--74.09297
-Entire home/apt
-85
-2
-248
-17771811
-NYC pad without the NYC price tag
-48331309
-Ketty
-1
-40.63101
--74.08443
-Entire home/apt
-95
-4
+_
+_
+_
+_
 0
-20034244
-Two rooms in one. A family friendly neighborhood.
-113295877
-Jonathan
-3
-40.63529
--74.09068
-Private room
-59
-3
-351
-21623610
-Small Guestroom 30 mins to Downtown Manhattan
-90658585
-Faye
-3
-40.63333
--74.08389
-Private room
-30
-3
-176
-22649404
-"@Ferry 2Bedroom/4bed.Private Renovated/Stylish..."
-1715301
-Mark
-3
-40.63518
--74.07956
-Entire home/apt
-65
-4
-191
-23247442
-"Contemporary Home Away from Home Entire house"
-499896
-Leon
-1
-40.63462
--74.08136
-Entire home/apt
-245
-2
-216
-23996479
-#1  Spacious Private Room
-303939
-Lissette
-6
-40.63485
--74.08539
-Private room
-37
-2
-341
-24632590
-"Apt near ferry verrazano brdg RUMC buses NYC wifi"
-32162495
-Mostafa
-3
-40.6326
--74.09099
-Entire home/apt
-199
-1
-171
-24678015
-"A place to sleep the night near NYC RUMC Brooklyn"
-32162495
-Mostafa
-3
-40.63126
--74.0921
-Entire home/apt
-48
-3
+_
+_
+_
+_
 0
-25626932
-10 mins to Free Ferry to Manhattan NYC new mall
-182272609
-Denada
-2
-40.63369
--74.09489
-Entire home/apt
-161
-1
-87
-26085282
-Free ferry to Manhattan 10 mins away
-182272609
-Denada
-2
-40.63277
--74.09562
-Entire home/apt
-106
-3
-87
-26157329
-Large studio apt w/ private deck. Close to RUMC.
-102263916
-John
-2
-40.63111
--74.09001
-Entire home/apt
-99
-1
-172
-27236170
-Staten Island Home with a View
-205132904
-Farah
-2
-40.63513
--74.07929
-Private room
-135
-2
-293
-27510869
-Staten Island Apartment
-113295877
-Jonathan
-3
-40.63461
--74.08937
-Private room
-55
-3
-154
-27579796
-New York home ferry ride from Manhattan.
-169567256
-Pariis
-1
-40.63183
--74.09268
-Private room
-100
-2
 0
-27967621
-"Private Guest Suite Close To Ferry Colleges RUMC"
-13974626
-Carrie
-1
-40.63482
--74.095
-Entire home/apt
-65
-2
-247
-28671992
-Cozy Bedroom with Private Bath
-205132904
-Farah
-2
-40.63311
--74.07936
-Private room
-55
-2
-302
-29828614
-New York home ferry ride from Manhattan.
-224370048
-Pariis
-1
-40.63304
--74.09244
-Private room
-90
-1
-262
-30037932
-Loft with Room in Exclusive Area near Free Ferry
-183625602
-Leslie
-1
-40.62917
--74.08619
-Entire home/apt
-120
-3
-166
-31193843
-Spacious 2 Bedrooms
-231352789
-Farah
-3
-40.63489
--74.07967
-Private room
-69
-2
-280
-31253968
-Small Room In NY
-303939
-Lissette
-6
-40.63584
--74.08542
-Private room
-35
-2
-299
-31416916
-"2 Bedrooms Nearby Free ""Manhattan Ferry"""
-231352789
-Farah
-3
-40.63515
--74.07929
-Private room
-85
-2
-296
-32912783
-Loft bed
-113295877
-Jonathan
-3
-40.63476
--74.0894
-Private room
-55
-3
-61
-35732847
-A lovely room in a great house close to RUMC.
-102263916
-John
-2
-40.63281
--74.09132
-Private room
-50
-1
-84
-36233195
-Welcome home buddies in NYC
-121399223
-Weifeng
-1
-40.6283
--74.08645
-Private room
-60
-1
-88
-Tottenville
-7
-639199
-"Beautiful 4BR/4BA Home Staten Island NY City."
-1483081
-Marina
-1
-40.50868
--74.23986
-Entire home/apt
-299
-3
-245
-10830083
-Beautiful well kept private home!
-56078939
-Tony
-1
-40.49979
--74.24084
-Private room
-110
-2
-364
-12230928
-Villa DiGioia visit NYC via SI
-65806798
-Michael J
-1
-40.50708
--74.24285
-Private room
-100
-2
-365
-14569577
-Come Explore the Big Apple!
-90104417
-Sueann
-2
-40.51133
--74.23803
-Entire home/apt
-275
-4
-313
-18997371
-Cozy Getaway
-90104417
-Sueann
-2
-40.50873
--74.23914
-Entire home/apt
-85
-2
-159
-34888503
-Charming town of Tottenville right outside NYC
-962249
-Dora
-1
-40.50943
--74.24442
-Entire home/apt
-70
-3
-128
-35489384
-Cozy Apartment
-236186921
-Iveth
-1
-40.50641
--74.23059
-Entire home/apt
-75
-1
-299
-West Brighton
-4
-4974843
-Charming private Studio
-25641892
-Tonia
-1
-40.63182
--74.124
-Entire home/apt
-70
-2
-231
-6181131
-"Share quiet clean and spacious apt"
-32060911
-Elvis
-2
-40.63438
--74.11518
-Private room
-40
-30
-354
-14804661
-"Cozy 4 beds Free Ferry to Manhattan."
-92493393
-Eddie & Lois
-5
-40.63333
--74.11311
-Entire home/apt
-125
-2
-362
-15081440
-Eco  private room for 4 best location to Mahanttan
-92493393
-Eddie & Lois
-5
-40.63215
--74.11403
-Private room
-69
-2
-355
+_
+_
+_
+_
+0
+_
+_
+_
+_
+0
+0
+_
+_
+_
+_
+0
+_
+_
+_
+_
+0
+0
+_
+_
+_
+_
+0
+_
+_
+_
+_
+0
+0
+_
+_
+_
+_
+0
+_
+_
+_
+_
+0
+0
+_
+_
+_
+_
+0
+_
+_
+_
+_
+0
+0
+_
+_
+_
+_
+0
+_
+_
+_
+_
+0
+0
+_
+_
+_
+_
+0
+_
+_
+_
+_
+0
+0
+_
+_
+_
+_
+0
+_
+_
+_
+_
+0
+0
+_
+_
+_
+_
+0
+_
+_
+_
+_
+0
+0
+_
+_
+_
+_
+0
+_
+_
+_
+_
+0
+0
+_
+_
+_
+_
+0
+_
+_
+_
+_
+0
+0
+_
+_
+_
+_
+0
+_
+_
+_
+_
+0
+0
+_
+_
+_
+_
+0
+_
+_
+_
+_
+0
+0
+_
+_
+_
+_
+0
+_
+_
+_
+_
+0
+0
+_
+_
+_
+_
+0
+_
+_
+_
+_
+0
+0
+__
+0
+__
+0

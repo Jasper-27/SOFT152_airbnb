@@ -35,7 +35,7 @@
             numOfProperties = NEWnumOfProperties;
         }
 
-        public void SETneighbourhoods(Property[] NEWproperty)
+        public void SETproperties(Property[] NEWproperty)
         {
             properties = NEWproperty;
         }
