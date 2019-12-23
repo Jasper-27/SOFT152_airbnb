@@ -1,7 +1,7 @@
 Bronx
 19
 Allerton
-42
+43
 182177
 A PRIVATE FLAT / APARTMENT- $SPECIAL$
 873273
@@ -14,16 +14,16 @@ Entire home/apt
 2
 347
 498120
-Hi Traveler.. welcome
-2459648
-Ellen
-1
+Jasper's Flat
+27
+Jasper
+2
 40.8687
 -73.8524
 Private room
-35
-7
-90
+10000
+1
+1
 715270
 2 Beds/Queen & Full Beautiful Room 40 minsT.Square
 3684360
@@ -464,6 +464,17 @@ Entire home/apt
 140
 2
 175
+93248092
+Jasper's other flat
+27
+Jasper
+2
+1
+1
+A flat
+10000000
+1
+1
 Baychester
 7
 11020169

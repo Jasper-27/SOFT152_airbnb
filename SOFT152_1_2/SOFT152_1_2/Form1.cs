@@ -23,6 +23,7 @@ namespace SOFT152_1_2
 
         public int selectedDistrict;
         public int selectedNeighbourhood;
+        public int selectedProperty; 
 
         StreamReader inData;
         StreamWriter outData; 
@@ -288,15 +289,19 @@ namespace SOFT152_1_2
             //Reading the neighbourhood values 
             
 
-                District currentDist = allDistricts[selectedDistrict];
-                allNeighbourhoods = currentDist.GETneighbourhoods();
+            District currentDist = allDistricts[selectedDistrict];
+            allNeighbourhoods = currentDist.GETneighbourhoods();
 
-                for (int i = 0; i < allNeighbourhoods.Length; i++)
-                {
+            int x = currentDist.GETnumOfNeighbourhoods(); 
 
-                    allNeighbourhoods[i].SETneighbourhoodName(dgNeig.Rows[i].Cells["neigName"].Value.ToString());
-                    //tempString = dgNeig.Rows[i].Cells["neigName"].Value.ToString();
-                }
+            for (int i = 0; i < currentDist.GETnumOfNeighbourhoods(); i++)
+            {
+
+                //allNeighbourhoods[i].SETneighbourhoodName(dgNeig.Rows[i].Cells["neigName"].Value.ToString());
+
+                //MessageBox.Show(i.ToString()); 
+                //tempString = dgNeig.Rows[i].Cells["neigName"].Value.ToString();
+            }
             
             
         }
@@ -488,7 +493,7 @@ namespace SOFT152_1_2
                 //read();
                 if (dgNeig.Rows.Count !=0)
                 {
-                    //readNeighbourhoods();
+                    readNeighbourhoods();
                 }
 
                 //Checks if the datagrid is empty or not
@@ -583,7 +588,7 @@ namespace SOFT152_1_2
                 Array.Resize(ref allNeighbourhoods, 0); 
             }
           
-            Array.Resize(ref allNeighbourhoods, allNeighbourhoods.Length + 1);
+            Array.Resize(ref allNeighbourhoods, allNeighbourhoods.Length + 1); 
           
             
             allNeighbourhoods[allNeighbourhoods.Length - 1] = newNeighbourhood; 
@@ -637,6 +642,62 @@ namespace SOFT152_1_2
                 MessageBox.Show("Cannot add a property if a neighbourhood is not selected"); 
             }
             
+        }
+
+
+        //This does not work
+        private void btnDelProp_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                District currentDist = allDistricts[selectedDistrict];
+                allNeighbourhoods = currentDist.GETneighbourhoods();
+                Neighbourhood currentNeig = allNeighbourhoods[selectedNeighbourhood];
+                allProperties = currentNeig.GETproperties();
+
+                // allProperties[selectedProperty]; 
+
+                for (int i = selectedProperty; i < currentNeig.GETnumOfProperties() - 1; i++)
+                {
+                    // moving elements downwards, to fill the gap at [index]
+                    allProperties[i] = allProperties[i + 1];
+                }
+                // finally, let's decrement Array's size by one
+                Array.Resize(ref allProperties, allProperties.Length - 1);
+
+
+                currentNeig.SETnumOfProperties(allProperties.Length);
+                currentNeig.SETproperties(allProperties);
+
+                dgProp.Rows.Clear();
+
+                //readProperties(); 
+
+                //Makes an array string with the district names
+                for (int i = 0; i < currentNeig.GETnumOfProperties(); i++)
+                {
+                    addPropRow(allProperties[i]);
+                }
+            }catch
+            {
+                MessageBox.Show("Select valid property to delete"); 
+            }
+        }
+
+        private void dgProp_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedProperty = dgProp.Rows[e.RowIndex].Index;
+        }
+
+        private void dgDist_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgProp_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 
