@@ -524,27 +524,8 @@ namespace SOFT152_1_2
                     addPropRow(tempProperties[i]);    
                 }
 
-
-          
-
-
-
         }
 
-        private void dgNeig_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnOpenFile_Click(object sender, EventArgs e)
         {
@@ -567,14 +548,7 @@ namespace SOFT152_1_2
             Array.Resize(ref allDistricts, allDistricts.Length + 1);
             allDistricts[allDistricts.Length - 1] = newDistrict;
 
-
-
-            //fillInDistTable();
-
             dgDist.Rows.Add(newDistrict.GETdistrictName());
-
-            ///string NEWDistrictName, int NEWNumOfNeighbourhoods, Neighbourhood[] NEWneighbourhoods
-
 
         }
         private void btnAddNeig_Click(object sender, EventArgs e)
@@ -685,20 +659,6 @@ namespace SOFT152_1_2
             }
         }
 
-        private void dgProp_RowEnter(object sender, DataGridViewCellEventArgs e)
-        {
-            selectedProperty = dgProp.Rows[e.RowIndex].Index;
-        }
-
-        private void dgDist_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dgProp_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 
 

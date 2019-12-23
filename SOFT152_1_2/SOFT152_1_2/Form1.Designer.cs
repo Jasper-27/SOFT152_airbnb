@@ -104,7 +104,6 @@
             this.dgDist.Name = "dgDist";
             this.dgDist.Size = new System.Drawing.Size(157, 269);
             this.dgDist.TabIndex = 7;
-            this.dgDist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgDist_CellContentClick);
             this.dgDist.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgDist_RowEnter);
             // 
             // distName
@@ -127,7 +126,6 @@
             this.dgNeig.Name = "dgNeig";
             this.dgNeig.Size = new System.Drawing.Size(157, 319);
             this.dgNeig.TabIndex = 8;
-            this.dgNeig.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgNeig_CellContentClick);
             this.dgNeig.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgNeig_RowEnter);
             // 
             // neigName
@@ -159,8 +157,6 @@
             this.dgProp.Name = "dgProp";
             this.dgProp.Size = new System.Drawing.Size(1145, 619);
             this.dgProp.TabIndex = 9;
-            this.dgProp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgProp_CellContentClick);
-            this.dgProp.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgProp_RowEnter);
             // 
             // propID
             // 
@@ -247,7 +243,6 @@
             this.label1.Size = new System.Drawing.Size(89, 25);
             this.label1.TabIndex = 11;
             this.label1.Text = "Districts";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
