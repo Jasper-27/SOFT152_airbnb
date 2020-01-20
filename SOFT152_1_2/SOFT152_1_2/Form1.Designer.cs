@@ -65,7 +65,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(1351, 339);
+            this.btnRefresh.Location = new System.Drawing.Point(1350, 362);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(149, 91);
             this.btnRefresh.TabIndex = 5;
@@ -81,7 +81,7 @@
             // 
             // btnOpenFile
             // 
-            this.btnOpenFile.Location = new System.Drawing.Point(1351, 253);
+            this.btnOpenFile.Location = new System.Drawing.Point(1350, 276);
             this.btnOpenFile.Name = "btnOpenFile";
             this.btnOpenFile.Size = new System.Drawing.Size(149, 86);
             this.btnOpenFile.TabIndex = 6;
@@ -99,7 +99,7 @@
             this.dgDist.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.distName});
             this.dgDist.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dgDist.Location = new System.Drawing.Point(27, 156);
+            this.dgDist.Location = new System.Drawing.Point(26, 179);
             this.dgDist.MultiSelect = false;
             this.dgDist.Name = "dgDist";
             this.dgDist.Size = new System.Drawing.Size(157, 269);
@@ -121,7 +121,7 @@
             this.dgNeig.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.neigName});
             this.dgNeig.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dgNeig.Location = new System.Drawing.Point(27, 489);
+            this.dgNeig.Location = new System.Drawing.Point(26, 512);
             this.dgNeig.MultiSelect = false;
             this.dgNeig.Name = "dgNeig";
             this.dgNeig.Size = new System.Drawing.Size(157, 319);
@@ -152,11 +152,12 @@
             this.propMinNight,
             this.propDaysAvailable});
             this.dgProp.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dgProp.Location = new System.Drawing.Point(200, 149);
+            this.dgProp.Location = new System.Drawing.Point(199, 172);
             this.dgProp.MultiSelect = false;
             this.dgProp.Name = "dgProp";
-            this.dgProp.Size = new System.Drawing.Size(1145, 619);
+            this.dgProp.Size = new System.Drawing.Size(1145, 659);
             this.dgProp.TabIndex = 9;
+            this.dgProp.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgProp_RowEnter);
             // 
             // propID
             // 
@@ -226,7 +227,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(1351, 149);
+            this.btnSave.Location = new System.Drawing.Point(1350, 172);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(149, 98);
             this.btnSave.TabIndex = 10;
@@ -238,7 +239,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 121);
+            this.label1.Location = new System.Drawing.Point(21, 144);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 25);
             this.label1.TabIndex = 11;
@@ -248,7 +249,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 461);
+            this.label2.Location = new System.Drawing.Point(21, 484);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(170, 25);
             this.label2.TabIndex = 12;
@@ -258,7 +259,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(205, 121);
+            this.label3.Location = new System.Drawing.Point(194, 144);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 25);
             this.label3.TabIndex = 13;
@@ -267,16 +268,18 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-16, -6);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(2949, 117);
+            this.pictureBox1.Size = new System.Drawing.Size(1904, 130);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
             // btnAddProperty
             // 
-            this.btnAddProperty.Location = new System.Drawing.Point(243, 802);
+            this.btnAddProperty.Location = new System.Drawing.Point(199, 837);
             this.btnAddProperty.Name = "btnAddProperty";
             this.btnAddProperty.Size = new System.Drawing.Size(571, 34);
             this.btnAddProperty.TabIndex = 16;
@@ -286,7 +289,7 @@
             // 
             // btnAddNeig
             // 
-            this.btnAddNeig.Location = new System.Drawing.Point(27, 807);
+            this.btnAddNeig.Location = new System.Drawing.Point(26, 837);
             this.btnAddNeig.Name = "btnAddNeig";
             this.btnAddNeig.Size = new System.Drawing.Size(157, 34);
             this.btnAddNeig.TabIndex = 17;
@@ -296,7 +299,7 @@
             // 
             // btnAddDist
             // 
-            this.btnAddDist.Location = new System.Drawing.Point(27, 424);
+            this.btnAddDist.Location = new System.Drawing.Point(26, 447);
             this.btnAddDist.Name = "btnAddDist";
             this.btnAddDist.Size = new System.Drawing.Size(157, 34);
             this.btnAddDist.TabIndex = 18;
@@ -306,9 +309,9 @@
             // 
             // btnDelProp
             // 
-            this.btnDelProp.Location = new System.Drawing.Point(813, 802);
+            this.btnDelProp.Location = new System.Drawing.Point(776, 837);
             this.btnDelProp.Name = "btnDelProp";
-            this.btnDelProp.Size = new System.Drawing.Size(575, 34);
+            this.btnDelProp.Size = new System.Drawing.Size(568, 34);
             this.btnDelProp.TabIndex = 19;
             this.btnDelProp.Text = "Delete Property";
             this.btnDelProp.UseVisualStyleBackColor = true;
@@ -316,10 +319,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1509, 881);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.btnDelProp);
             this.Controls.Add(this.btnAddDist);
             this.Controls.Add(this.btnAddNeig);
@@ -336,8 +339,8 @@
             this.Controls.Add(this.btnRefresh);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.ShowIcon = false;
+            this.Text = "Airbnb";
             ((System.ComponentModel.ISupportInitialize)(this.dgDist)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgNeig)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgProp)).EndInit();

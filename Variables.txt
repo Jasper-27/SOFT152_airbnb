@@ -1,0 +1,35 @@
+District 
+    Search and Display
+    ADD
+    EDIT
+
+    String      District name
+    Int         Number of neighbourhoods 
+    Int[]       The neighbourhoods (array)
+    
+Neighbourhood
+    SELECT and Display
+    ADD
+    EDIT
+
+    String      neighbourhood name 
+    Int         The number of properties 
+    Int[]       the properties (array)
+    
+Property
+    Select and Display
+    Add
+    Edit
+    Delete
+    
+    Int         PropertyID
+    String      Property Name
+    String      HostID
+    String      Host Name
+    Int         Number of propert listed for host
+    Short       Latitude
+    Short       Longitude
+    string      Room type 
+    int         Price
+    Int         Minimum number of nights
+    int         availability(number of days) 

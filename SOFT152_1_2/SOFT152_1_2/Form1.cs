@@ -10,8 +10,7 @@ namespace SOFT152_1_2
 
     public partial class Form1 : Form
     {
-        //District 
-        //Neighbourhood[] neighbourhoods;
+        //Declaring the public variables S
 
         public static string theFile; 
 
@@ -27,6 +26,8 @@ namespace SOFT152_1_2
 
         StreamReader inData;
         StreamWriter outData; 
+
+
         //int dataLinCount = File.ReadLines(theFile).Count();
 
        
@@ -54,18 +55,15 @@ namespace SOFT152_1_2
 
             setup();
 
-            
-
-           
-
         }
 
+        //Returns a district from the file
         private District gogetDistrict()
         {
            
             District tempDistrict;
 
-
+            //Reads the data from the file 
             string tempDistrictName = inData.ReadLine();
             string tempNeighbourhoodNum = inData.ReadLine();
 
@@ -77,7 +75,7 @@ namespace SOFT152_1_2
             Neighbourhood[] allNeighbourhoods = new Neighbourhood[NeighbourhoodsInDistrict];
 
 
-            //Stops checking for librarys if the libname is null (this stops the program for endlessly checking 
+            //If the district name retunesnull, stop checking as the file is finished 
             if (tempDistrictName == null)
             {
                 endOfDistricts = true;
@@ -116,7 +114,7 @@ namespace SOFT152_1_2
                     string tempMinNightNum = inData.ReadLine();
                     string tempDaysAvailable = inData.ReadLine();
 
-                    //tempProperty = new Property(tempPropertyID, tempPropertyName, hostID, hostName, Convert.ToInt32(tempNumOfHostProperties), tempLatitude, tempLongitude, tempRoomType, tempPrice, Convert.ToInt32(tempMinNightNum), Convert.ToInt32(tempDaysAvailable));
+                    ///tempProperty = new Property(tempPropertyID, tempPropertyName, hostID, hostName, Convert.ToInt32(tempNumOfHostProperties), tempLatitude, tempLongitude, tempRoomType, tempPrice, Convert.ToInt32(tempMinNightNum), Convert.ToInt32(tempDaysAvailable));
 
 
                     //Creating a temp property ready to be added to the property array 
@@ -166,13 +164,12 @@ namespace SOFT152_1_2
             for (int i = 0; i < tempNeigNames.Length; i++)
             {
                 tempNeigNames[i] = allNeighbourhoods[i].GETneighbourhoodName();
-
-            }
-
-            for (int i = 0; i < tempNeigNames.Length; i++)
-            {
                 dgNeig.Rows.Add(tempNeigNames[i]);
+
             }
+
+
+            //
         }
 
         private void fillInPropTable()
@@ -261,10 +258,7 @@ namespace SOFT152_1_2
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-
-
-            setup();
-   
+            setup();   
         }
 
         public void readDistricts()
@@ -378,16 +372,43 @@ namespace SOFT152_1_2
             //read();
 
 
-            //Saving the data 
+            //Reads the data on the screen, incase it has not allready been added to the array 
+            readDistricts();
+            readNeighbourhoods(); 
+            readProperties();
+            
 
-            outData = new StreamWriter(theFile);
+
+            //Saving the data 
+            try
+            {
+                outData = new StreamWriter(theFile);
+            }
+            catch
+            {
+                MessageBox.Show("Cannot open stream Writer on this file. It could be being used by another process.");
+
+             
+
+            }
+
 
 
             foreach (District dis in allDistricts)
             {
-                outData.WriteLine(dis.GETdistrictName()); 
-                outData.WriteLine(dis.GETnumOfNeighbourhoods());
+                //If the program can write the district data to the file 
+                try
+                {
+                    outData.WriteLine(dis.GETdistrictName());
+                    outData.WriteLine(dis.GETnumOfNeighbourhoods());
+                }
+                catch
+                {
+                    MessageBox.Show("There is no Data to save");
+                    break; 
+                }
 
+                //writes the neighbourhood data to the file 
                 if (dis.GETnumOfNeighbourhoods() != 0)
                 {
                     allNeighbourhoods = dis.GETneighbourhoods();
@@ -397,7 +418,8 @@ namespace SOFT152_1_2
                         outData.WriteLine(nei.GETnumOfProperties());
 
                         if (nei.GETnumOfProperties() != 0)
-                        {
+                        {   
+                            //Writes the property data to the file 
                             allProperties = nei.GETproperties();
                             foreach (Property tempProp in allProperties)
                             {
@@ -417,10 +439,18 @@ namespace SOFT152_1_2
                     }
                 }
             }
-            outData.Close(); 
+
+            //Tries to close the file. But doesnt if is null (not opened in the first place) 
+            try
+            {
+                outData.Close();
+            }
+            catch { }
+             
         }
 
 
+        //Adds a row to the property grid 
         private void addPropRow(Property tempProp)
         {
             string[] row = new string[11];
@@ -443,32 +473,33 @@ namespace SOFT152_1_2
 
         private void dgDist_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-  
-                //readDistricts();
-
-                //Checks if the datagrid is empty or not
-                if (dgNeig.Rows.Count != 0)
-                {
-                    readNeighbourhoods();
-                }
-                if (dgProp.Rows.Count != 0)
-                {
-                    readProperties();
-                }
+ 
+            //Checks if the datagrid is empty or not
+            if (dgNeig.Rows.Count != 0)
+            {
+                readNeighbourhoods();
+            }
+            if (dgProp.Rows.Count != 0)
+            {
+                readProperties();
+            }
 
 
-                selectedDistrict = dgDist.Rows[e.RowIndex].Index;
+            selectedDistrict = dgDist.Rows[e.RowIndex].Index;
 
-                dgNeig.Rows.Clear();
-                dgProp.Rows.Clear();
+            dgNeig.Rows.Clear();
+            dgProp.Rows.Clear();
 
+
+            //Populates the neighbourhood datagrid 
+            try
+            {
                 District tempDistrict = allDistricts[selectedDistrict];
                 Neighbourhood[] tempNeighbourhoods = tempDistrict.GETneighbourhoods();
 
                 if (tempDistrict.GETnumOfNeighbourhoods() != 0)
                 {
                     string[] tempNeighNames = new string[tempNeighbourhoods.Length];
-
 
 
                     //Makes an array string with the district names
@@ -478,9 +509,11 @@ namespace SOFT152_1_2
                         dgNeig.Rows.Add(tempNeighNames[i]);
                     }
                 }
-
-            
-        
+            }
+            catch
+            {
+                MessageBox.Show("Cannot add a district if there is no file open");
+            }
 
         }
 
@@ -505,9 +538,11 @@ namespace SOFT152_1_2
 
                 selectedNeighbourhood = dgNeig.Rows[e.RowIndex].Index;
 
+            
+
                 dgProp.Rows.Clear();
 
-
+                //Populates the property datagrid the property data 
                 District tempDistrict = allDistricts[selectedDistrict];
                 Neighbourhood[] tempNeighbourhoods = tempDistrict.GETneighbourhoods();
 
@@ -516,9 +551,7 @@ namespace SOFT152_1_2
 
                 Property[] tempProperties = tempNeighbourhood.GETproperties();
 
-
-
-                //Makes an array string with the district names
+              
                 for (int i = 0; i < tempNeighbourhood.GETnumOfProperties(); i++)
                 {
                     addPropRow(tempProperties[i]);    
@@ -526,16 +559,13 @@ namespace SOFT152_1_2
 
         }
 
-
+        //Opens the file 
         private void btnOpenFile_Click(object sender, EventArgs e)
         {
             if (OFDGetData.ShowDialog() == DialogResult.OK)
             {
                 theFile = OFDGetData.FileName;
-
-                //MessageBox.Show(file); 
             }
-
             setup();
         }
 
@@ -543,8 +573,8 @@ namespace SOFT152_1_2
         //Adding the properties 
         private void btnAddDist_Click(object sender, EventArgs e)
         {
-            //District currentDist = allDistricts[selectedDistrict];
-            District newDistrict = new District("__",0,null);
+             
+            District newDistrict = new District(" ",0,null); //Creates a new district and puts it on the data grid. It can be edited later
             Array.Resize(ref allDistricts, allDistricts.Length + 1);
             allDistricts[allDistricts.Length - 1] = newDistrict;
 
@@ -553,26 +583,36 @@ namespace SOFT152_1_2
         }
         private void btnAddNeig_Click(object sender, EventArgs e)
         {
-            District currentDist = allDistricts[selectedDistrict];
-            allNeighbourhoods = currentDist.GETneighbourhoods(); 
-            Neighbourhood newNeighbourhood = new Neighbourhood("__", 0, null);
-
-            if (allNeighbourhoods == null)
+            try
             {
-                Array.Resize(ref allNeighbourhoods, 0); 
+                District currentDist = allDistricts[selectedDistrict];  //sets the current working district using the users selection 
+
+                allNeighbourhoods = currentDist.GETneighbourhoods();
+                Neighbourhood newNeighbourhood = new Neighbourhood(" ", 0, null);
+
+                if (allNeighbourhoods == null) // if there are not any neighbourhoods allready in the district, set the array to be none
+                {
+                    Array.Resize(ref allNeighbourhoods, 0);
+                }
+
+                Array.Resize(ref allNeighbourhoods, allNeighbourhoods.Length + 1); 
+
+
+                allNeighbourhoods[allNeighbourhoods.Length - 1] = newNeighbourhood;
+
+                //Set the current district to have the new neighbourhood
+                currentDist.SETnumOfNeighbourhoods(allNeighbourhoods.Length);
+                currentDist.SETneighbourhoods(allNeighbourhoods);
+
+          
+
+                dgNeig.Rows.Add(newNeighbourhood.GETneighbourhoodName());
             }
-          
-            Array.Resize(ref allNeighbourhoods, allNeighbourhoods.Length + 1); 
-          
+            catch
+            {
+                MessageBox.Show("Error reading data from file"); 
+            }
             
-            allNeighbourhoods[allNeighbourhoods.Length - 1] = newNeighbourhood; 
-            
-            currentDist.SETnumOfNeighbourhoods(allNeighbourhoods.Length);
-            currentDist.SETneighbourhoods(allNeighbourhoods);
-
-            //fillInNeigTable();
-
-            dgNeig.Rows.Add(newNeighbourhood.GETneighbourhoodName());
 
 
         }
@@ -584,7 +624,8 @@ namespace SOFT152_1_2
                 District currentDist = allDistricts[selectedDistrict];
                 allNeighbourhoods = currentDist.GETneighbourhoods();
 
-                if (allNeighbourhoods == null)
+                //Makes sure there is a district for the neighbourhood to be added too. 
+                if (currentDist.GETnumOfNeighbourhoods() == 0)
                 {
                     MessageBox.Show("Cannot add a property with no neighbourhood"); 
                 }
@@ -592,7 +633,7 @@ namespace SOFT152_1_2
                 {
                     Neighbourhood currentNeig = allNeighbourhoods[selectedNeighbourhood];
                     allProperties = currentNeig.GETproperties();
-                    Property newProperty = new Property("_", "_", "_", "_", 0, "_", "_", "_", "_", 0, 0);
+                    Property newProperty = new Property(" ", " ", " ", " ", 0, " ", " ", " ", " ", 0, 0);
 
                     if (allProperties == null)
                     {
@@ -619,25 +660,31 @@ namespace SOFT152_1_2
         }
 
 
-        //This does not work
+
+       /// 
+
+        //Deletes the users selected property 
         private void btnDelProp_Click(object sender, EventArgs e)
         {
+           
 
             try
             {
+                //Works out which district and neighbourhood the property belongs too 
                 District currentDist = allDistricts[selectedDistrict];
                 allNeighbourhoods = currentDist.GETneighbourhoods();
                 Neighbourhood currentNeig = allNeighbourhoods[selectedNeighbourhood];
                 allProperties = currentNeig.GETproperties();
 
-                // allProperties[selectedProperty]; 
+               
+
 
                 for (int i = selectedProperty; i < currentNeig.GETnumOfProperties() - 1; i++)
                 {
-                    // moving elements downwards, to fill the gap at [index]
+                    // moving elements downwards, to fill the gap at [i]
                     allProperties[i] = allProperties[i + 1];
                 }
-                // finally, let's decrement Array's size by one
+                // De-increments the array 
                 Array.Resize(ref allProperties, allProperties.Length - 1);
 
 
@@ -645,8 +692,6 @@ namespace SOFT152_1_2
                 currentNeig.SETproperties(allProperties);
 
                 dgProp.Rows.Clear();
-
-                //readProperties(); 
 
                 //Makes an array string with the district names
                 for (int i = 0; i < currentNeig.GETnumOfProperties(); i++)
@@ -657,6 +702,13 @@ namespace SOFT152_1_2
             {
                 MessageBox.Show("Select valid property to delete"); 
             }
+        }
+
+
+        //Sets the selected property when the users changes row (allows for row deletion) 
+        private void dgProp_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedProperty = dgProp.Rows[e.RowIndex].Index;
         }
 
     }
